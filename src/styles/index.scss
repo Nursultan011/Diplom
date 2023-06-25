@@ -538,7 +538,7 @@ footer .privac span{
 .save-btn button {
   padding: 15px 16px;
   width: 355px;
-  background: #565656;
+  background: black;
   color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -850,6 +850,7 @@ footer .privac span{
 .popup__close {
   text-decoration: none;
   color:#000;
+  cursor: pointer;
 }
 
 .popup_content .save-btn {

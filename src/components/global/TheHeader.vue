@@ -45,7 +45,7 @@ import { ref } from "vue";
 export default {
   setup(props, { emit }) {
     const auth = () => {
-      emit("auth-clicked");
+      emit("auth-modal", true);
     };
 
     return {
