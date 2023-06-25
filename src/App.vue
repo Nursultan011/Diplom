@@ -1,8 +1,12 @@
 <template>
-  <the-header @auth-clicked="openAuth" />
+  <the-header @auth-modal="openAuth" />
   <router-view />
   <the-footer />
-  <auth-modal v-if="openAuthModal" />
+  <auth-modal
+    :class="{ open: openAuthModal }"
+    v-if="openAuthModal"
+    @auth-modal="openAuth"
+  />
 </template>
 
 <script>
@@ -19,8 +23,8 @@ export default {
   setup() {
     const openAuthModal = ref(false);
 
-    const openAuth = () => {
-      openAuthModal.value = true;
+    const openAuth = (value) => {
+      openAuthModal.value = value;
     };
 
     return {
