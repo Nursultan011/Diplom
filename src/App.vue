@@ -35,4 +35,11 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FBFBFB;
+}
+</style>

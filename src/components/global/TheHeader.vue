@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <header>
+    <header class="header">
       <router-link to="#">
         <div class="logo">
           <img src="../../assets/img/Group700.svg" alt="" />
@@ -55,4 +55,16 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  .wrapper {
+    background:  #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    width: 90%;
+  }
+</style>
