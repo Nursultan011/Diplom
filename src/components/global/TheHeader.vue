@@ -10,9 +10,8 @@
         <div class="directory" style="margin-top: 9px">
           <img
             src="../../assets/img/Icon.svg"
-            width="16px"
-            height="12px"
             alt=""
+            style="width: 16px; height: 12px;"
           />
           <span>DIRECTORY</span>
         </div>

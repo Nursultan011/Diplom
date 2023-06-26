@@ -42,6 +42,8 @@ export default {};
       margin-left: 10%;
     }
     &2 {
+      position: absolute;
+
       left: 45%;
       width: 50%;
 
@@ -60,7 +62,6 @@ export default {};
         margin-left: 10%;
       }
       &2 {
-        position: absolute;
 
         left: 40%;
         width: 55%;
