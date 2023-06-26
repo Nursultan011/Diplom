@@ -281,7 +281,7 @@ export default {
 
     const forgotSubmit = async () => {
       try {
-        const response = await axios.post("/user/save", forgot.value);
+        const response = await axios.post("/user/change", forgot.value);
 
         console.log(response);
       } catch (err) {
