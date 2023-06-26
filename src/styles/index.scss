@@ -30,7 +30,6 @@ header {
 header .logo{
   /* width: 162px;
   height: 40px; */
-  display: flex;
   justify-content: center;
   /* background: #D7D7D7; */
   margin-right: 11px;
@@ -61,7 +60,7 @@ header .directory:hover span{
 
 header .directory span {
   color: #565656;
-  padding: 11px 0px 10px 0px;
+  padding: 11px 10px 10px 0px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -76,7 +75,6 @@ header .search{
     background: #F7F7F7;
     width: 741px;
     height: 40px;
-    display: flex;
 }
 .search img{
     padding: 5px 10px 0px 20px;

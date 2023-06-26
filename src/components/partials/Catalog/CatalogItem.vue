@@ -45,6 +45,8 @@ export default {
   &__image {
     width: 238px;
     height: 238px;
+
+    margin-bottom: 20px;
   }
 
   &__name {
@@ -55,6 +57,8 @@ export default {
     font-weight: 600;
 
     width: 100%;
+    height: 60px;
+    margin-bottom: 16px;
   }
 
   &__cost {
@@ -66,6 +70,7 @@ export default {
     font-weight: 700;
 
     width: 100%;
+    margin-bottom: 20px;
   }
 
   &__btn {
@@ -96,7 +101,7 @@ export default {
     position: absolute;
 
     top: 32px;
-    right: 25px;
+    right: 32px;
   }
 }
 </style>

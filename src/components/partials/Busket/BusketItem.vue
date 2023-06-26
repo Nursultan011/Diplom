@@ -18,7 +18,7 @@
 
         <div class="busket-item__del" v-on:click="onDel"></div>
 
-        <p class="busket-item__cost">{{ item.cost }} KZT</p>
+        <p class="busket-item__cost">{{ cost }} KZT</p>
         
     </div>    
 </template>
@@ -38,14 +38,14 @@ export default {
     },
     computed: {
         cost() {
-            var newPrice = parseInt(this.item.price.split(' ').join(''));
+            var newPrice = parseInt(this.item.cost.split(' ').join(''));
 
             if(typeof(newPrice) == 'number') {
 
                 return newPrice * this.count;
             }
 
-            return item.price;
+            return item.cost;
         }
     },
     methods: {
@@ -61,7 +61,7 @@ export default {
             }
 
             var itemToAdd = this.item;
-            var newPrice = parseInt(this.item.price.split(' ').join(''));
+            var newPrice = parseInt(this.item.cost.split(' ').join(''));
             itemToAdd.count = this.count;
 
             // if(typeof(newPrice) == 'number') {
@@ -81,7 +81,7 @@ export default {
             }
 
             var itemToAdd = this.item;
-            var newPrice = parseInt(this.item.price.split(' ').join(''));
+            var newPrice = parseInt(this.item.cost.split(' ').join(''));
             itemToAdd.count = this.count;
 
             // if(typeof(newPrice) == 'number') {
@@ -205,6 +205,10 @@ export default {
             }
         }
 
+        &__minus, &__plus {
+            cursor: pointer;
+        }
+
         &__del {
             background: url(../../../assets/busket/icon-delete.svg);
             background-repeat: no-repeat;
@@ -217,7 +221,7 @@ export default {
             position: absolute;
             bottom: 16px;
             right: 16px;
-            
+
             color: var(--text-color, #000);
             font-size: 18px;
             font-family: Montserrat;
