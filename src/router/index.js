@@ -16,6 +16,17 @@ const routes = [
     path: '/busket',
     name: 'busket',
     component: () => import(/* webpackChunkName: "busket" */ '../pages/busket.vue')
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: () => import(/* webpackChunkName: "settings" */ '../pages/settings.vue'),
+    children: [
+      {
+        path: 'account',
+        component: () => import(/* webpackChunkName: "settings" */ '../components/partials/Settings/Account.vue'),
+      },
+    ]
   }
 ]
 
